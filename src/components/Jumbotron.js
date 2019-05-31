@@ -3,11 +3,17 @@ import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import backImage from '../assets/back.jpg';
 
-const Styles = styled.div``;
+const Styles = styled.div`
+  .jumbo {
+    background: url(${backImage}) no-repeat;
+    background-size: cover;
+    color: white;
+  }
+`;
 
 export const Jumbotron = () => (
   <Styles>
-    <Jumbo fluid>
+    <Jumbo fluid className="jumbo">
       <Container>
         <h1>Fluid jumbotron</h1>
         <p>
