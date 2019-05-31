@@ -6,15 +6,14 @@ import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Catalog } from './pages/Catalog';
 import { NoMatch } from './pages/NoMatch';
-import { Layout } from './components/Layout';
 import { NavBar } from './components/NavBar';
-
-
+import { Container } from 'react-bootstrap';
 function App() {
   return (
     <React.Fragment>
+      
       <NavBar />
-      <Layout>
+      <Container>
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
@@ -23,7 +22,7 @@ function App() {
             <Route component={NoMatch} />
           </Switch>
         </Router>
-      </Layout>
+      </Container>
     </React.Fragment>
   );
 }
