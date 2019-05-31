@@ -7,12 +7,14 @@ import { About } from './pages/About';
 import { Catalog } from './pages/Catalog';
 import { NoMatch } from './pages/NoMatch';
 import { NavBar } from './components/NavBar';
+import { Jumbotron } from './components/Jumbotron';
 import { Container } from 'react-bootstrap';
+
 function App() {
   return (
     <React.Fragment>
-      
       <NavBar />
+      <Jumbotron />
       <Container>
         <Router>
           <Switch>
